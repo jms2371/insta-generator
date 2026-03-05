@@ -1,0 +1,160 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+
+}
+
+.wrapper {
+    width: 375px;
+    margin: 0 auto;
+}
+
+header {
+    height: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 16px;
+}
+
+main {
+    border-top: 1px solid #c6c6c6;
+   
+}
+
+.logo {
+    width: 127px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+}
+
+.post {
+    margin-bottom: 25px;
+}
+
+.post-header {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 11px;
+    gap: 7px;
+
+}
+
+
+.post-header-image img{
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+}
+
+.post-image img{
+    width: 100%;
+    display: block;
+
+}
+
+.post-header-text p{
+    margin: 0;
+}
+
+.icon-bar {
+    padding-top: 22px;
+    padding-left: 10px;
+    padding-bottom: 11px;
+    display: flex;
+    gap: 20px
+}
+
+.icon {
+    width: 30px;
+
+}
+
+p {
+    margin: 0;
+}
+
+
+/* Text styles */
+
+.account-name {
+    font-weight: bold;
+}
+
+.account-name,
+.location {
+  line-height: 1.15;
+}
+
+.likes {
+  font-weight: bold; 
+  padding-left: 13px; 
+  margin-bottom: 12px
+}
+
+.username {
+  font-weight: bold;  
+}
+
+.comment {
+    padding: 0 13px 16px 13px;
+}
+
+/* Like icon */
+
+.icon.liked {
+  filter: invert(27%) sepia(94%) saturate(7486%) hue-rotate(356deg) brightness(95%) contrast(110%);
+}
+
+.icon:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+
+/* Do NOT add padding directly to images or icons! 
+Think about how it can be applies to sections themselves 
+
+ Padding belongs to containers, not content
+
+Spacing between things is almost always the container’s job.
+	•	Containers create breathing room
+	•	Images/icons/text should not push layout around
+	•	Padding on items is a red flag in feed-style UIs
+
+Exception: buttons and pills (where padding is the content).
+
+Default browser styles are not neutral
+
+Assume elements come with opinions unless proven otherwise.
+
+Key offenders:
+	•	<p> has margins
+	•	<img> is inline
+	•	headings have large margins
+
+If layout feels haunted, check defaults first.
+
+*/
+
+
+/* REQUIREMENTS
+Create the first post
+Use semantic HTML
+Add hover effects to the icons 
+
+STRETCH GOALS 
+Use JavaScript to render out
+all three posts
+Increase the likes when 
+double clicking the post
+
+*/
